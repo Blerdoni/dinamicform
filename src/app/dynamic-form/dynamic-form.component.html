@@ -1,0 +1,10 @@
+<form [formGroup]="dynamicForm" (ngSubmit)="onSubmit()">
+        <div formArrayName="emailList">
+        <div *ngFor="let email of emailList.controls; let i = index" [formGroupName]="i">
+            <input type="email" formControlName="email">
+            <button type="button" (click)="removeEmail(i)">Remove</button>
+        </div>
+        </div>
+        <button type="button" (click)="addEmail()">Add Email</button>
+        <button type="submit" [disabled]="!dynamicForm.valid">Submit</button>
+ </form>

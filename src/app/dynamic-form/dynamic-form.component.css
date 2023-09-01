@@ -1,0 +1,52 @@
+/* Add this CSS to your component's CSS file (e.g., dynamic-form.component.css) */
+
+form {
+    width: 300px; /* Adjust the width to your preference */
+    margin: 0 auto;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-right: 5px;
+  }
+  
+  /* Style for the "Remove" button */
+  button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for the "Add Email" button */
+  button[type="submit"],
+  button[type="button"].add-email {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Add hover effect to buttons */
+  button[type="button"]:hover,
+  button[type="submit"]:hover,
+  button[type="button"].add-email:hover {
+    opacity: 0.8;
+  }
+  
